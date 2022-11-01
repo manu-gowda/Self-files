@@ -1,6 +1,6 @@
 package com.xworkz.urwish.boot;
 
-public class shubham {
+public class Omkar {
 	public String[] wifeName;
 	public int noOfChildran;
 	public int noOfLegs;
@@ -19,7 +19,7 @@ public class shubham {
 	
 	
 	
-	public shubham(String[] wifeName,int noOfChildran,int noOfLegs,double contactNo,String[] bodyParts,
+	public Omkar(String[] wifeName,int noOfChildran,int noOfLegs,double contactNo,String[] bodyParts,
 			String[] homeTown,String[] friends,String[] girlFriendName,int noOfExGirlFriend,
 			long[] girlFriendNo,String currentLocation,boolean type,boolean talent, String[] color) {
 		this.wifeName=wifeName;
@@ -90,6 +90,15 @@ public class shubham {
 			String String=color[i];
 			System.out.println(String);
 			}
+		
+		
+		
+		
+			
+		
 		}
 	
+	
+
+
 }
