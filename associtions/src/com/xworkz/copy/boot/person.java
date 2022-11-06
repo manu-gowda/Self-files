@@ -16,17 +16,16 @@ public class person {
 	}
 	public void showofperson() {
 		System.out.println(name);
-		System.out.println(job);
 		job.showofjob();
+		System.out.println(System.lineSeparator());
 		System.out.println("personnnnnnnnnn");
-		for(int i=0;i<=email.length;i++) {
-			System.out.println(email[i].id);
-			System.out.println(email[i].mobileNo);
-			System.out.println(email[i].company.name);
-			System.out.println(email[i].company.address.location.state.name);
-			System.out.println(email[i].password);
+		for (int i = 0; i < this.email.length; i++) {
+			Email email2 = this.email[i];
 			
-			
+			if(email2!=null) {
+				
+				email2.showofemail();
+			}
 		}
 		
 		

@@ -17,7 +17,7 @@ public class Job {
 	}
 	
 	public void showofjob() {
-		
+		System.out.println(System.lineSeparator());
 		System.out.println(salary);
 		System.out.println(role);
 		System.out.println(bond);

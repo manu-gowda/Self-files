@@ -17,6 +17,7 @@ public class Email {
 	
 	public void showofemail() 
 	{
+		System.out.println(System.lineSeparator());
 		System.out.println(id);
 		System.out.println(password);
 		System.out.println(mobileNo);

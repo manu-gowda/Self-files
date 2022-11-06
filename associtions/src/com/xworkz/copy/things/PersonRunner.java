@@ -28,7 +28,7 @@ public class PersonRunner {
 		
 		Job job = new Job(20000,"trainee",true,company1);
 		
-		person person = new person("shubham",email,job);
+		person person = new person("shincnuuu",email,job);
 		 person.showofperson();
 		 person.job.showofjob();
 		 person.job.company.showofcompany();

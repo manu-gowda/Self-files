@@ -16,6 +16,7 @@ public class Location {
 	}
 	
 	public void showoflocation() {
+		System.out.println(System.lineSeparator());
 		System.out.println(street);
 		state.showofstates();
 		country.showOfCountry();

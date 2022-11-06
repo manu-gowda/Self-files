@@ -14,6 +14,7 @@ public class Company {
 	}
 	
 	public void showofcompany() {
+		System.out.println(System.lineSeparator());
 		System.out.println(name);
 		System.out.println(ownerName);
 		

@@ -5,6 +5,8 @@ public class State {
 	public String cm;
 	public int noOfDistricts;
 	public String party;
+	
+	
 	public State(String name, String cm, int noOfDistricts, String party) {
 		super();
 		this.name = name;
@@ -13,6 +15,7 @@ public class State {
 		this.party = party;
 	}
 	public void showofstates() {
+		System.out.println(System.lineSeparator());
 		System.out.println(name);
 		System.out.println(cm);
 		System.out.println(noOfDistricts);

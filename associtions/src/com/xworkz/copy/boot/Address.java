@@ -9,6 +9,7 @@ public class Address {
 	}
 	
 	public void showofaddress() {
+		System.out.println(System.lineSeparator());
 		location.showoflocation();
 	}
 

@@ -17,6 +17,7 @@ public class City {
 	}
 	
 	public void showofcity() {
+		System.out.println(System.lineSeparator());
 		System.out.println(name);
 		System.out.println(famousFor);
 		System.out.println(capital);
