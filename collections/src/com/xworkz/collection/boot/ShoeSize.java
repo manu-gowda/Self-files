@@ -2,6 +2,7 @@ package com.xworkz.collection.boot;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class ShoeSize {
 
@@ -54,8 +55,16 @@ public class ShoeSize {
 		//for loop
 		for(Integer shoe:Size) {
 			System.out.println(shoe);
+			
 		}
+		System.out.println("============for loop============");
+           Iterator<Integer> ref = Size.iterator();
 		
+		       while(ref.hasNext()) {
+		
+		    	   Integer Size1=ref.next();
+			                System.out.println(Size1);
+		}
 	}
 
 }
