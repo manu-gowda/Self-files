@@ -1,13 +1,12 @@
 package com.xworkz.copy;
-
-public class AtmRunner {
+ class AtmRunner {
 
 	public static void main(String[] args) {
-		 Atm atm = new SbiAtm();
+		 Atm atm = (Atm) new SbiAtm();
 		 SbiAtm sbiatm =(SbiAtm)atm;
 		 
 		 
-		 sbiatm.CheckBalance();
+		 ((Atm) sbiatm).CheckBalance();
 		 sbiatm.withdraw();
 		 sbiatm.ministatemeny();
 		 
