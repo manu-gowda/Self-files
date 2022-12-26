@@ -339,9 +339,26 @@ public class StatesRunner {
 					String element = partner.next();
 					System.out.println(element.toLowerCase());
 				}	
+				
+				Iterator<String> palindrome = damsInIndia.iterator();
+			    
+			    while(palindrome.hasNext())
+			    {
+			    	String string = palindrome.next();
+			    	
+			    	
+			    	StringBuffer buffering = new StringBuffer(string);
+			    	buffering.reverse();
+			    	
+			    	String ref = buffering.toString();
+			    	if(string.equals(ref))
+			    	{
+			    		
+			    		System.out.println("palindrome buff:"+buffering);
 		
 	}
 
 
-
+			    }
+	}
 }
