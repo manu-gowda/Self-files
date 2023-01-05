@@ -9,8 +9,9 @@ public class PoliticalPartyRunner {
 		PoliticalParty adc=new Jds("20k",120,"kumar swamy");
 		adc.display();
 		
+		PoliticalParty ref=new Jds("34k",234,"fsldkjjj");
 		
-		
+		ref.display();
 		
 
 	}

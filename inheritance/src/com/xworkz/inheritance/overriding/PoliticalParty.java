@@ -4,6 +4,8 @@ public class PoliticalParty {
 	
 	public String fund;
 	public int noOfCandidates;
+	
+	
 	public PoliticalParty(String fund, int noOfCandidates) {
 		super();
 		this.fund = fund;
