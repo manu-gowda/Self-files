@@ -29,7 +29,7 @@ public class WeaponDTORunner {
 		collection.stream().sorted(ref).collect(Collectors.toList()).forEach(ele->System.out.println(ele));
 		
 
-		System.out.println("Sort by madeBy and madeOn");
+		System.out.println("Sort by madeon and madeBy");
 		collection.stream().sorted((a1,a2)->a1.getMadeBy().compareTo(a2.getMadeBy())).sorted((a1,a2)->a1.getMadeOn().compareTo(a2.getMadeOn())).forEach(ele->System.out.println(ele));
 		
 		System.out.println("Sort by name in descending");
