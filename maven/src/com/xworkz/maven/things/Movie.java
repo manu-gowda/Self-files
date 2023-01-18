@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 	public class Movie {
 		@Autowired
+		
 		private Directore directore;
 		@Autowired
 		private Producer producer;
