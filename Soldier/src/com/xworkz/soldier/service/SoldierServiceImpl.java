@@ -31,13 +31,12 @@ public class SoldierServiceImpl implements SoldierService {
 		
 		ValidatorFactory factory= Validation.buildDefaultValidatorFactory();
 	   Validator validator= factory.getValidator();
-	   Set<ConstraintViolation<SoldierDTO>> constraintViolations= validator.validate(dto);
+	   Set<ConstraintViolation<SoldierDTO>> Violations= validator.validate(dto);
 	   
-	   if(!constraintViolations.isEmpty()) {
+	   if(!Violations.isEmpty()) {
 		   System.out.println("there are validation errs");
 		   
-		   constraintViolations.forEach(v ->{
-		   System.out.println("violation message"+v.getMessage());
+		   Violations.forEach(v ->{System.out.println("violation message"+v.getMessage());
 		   });
 			
 		return false;
