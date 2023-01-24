@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1:
 collection
 set:LinkedSet,LinkedHashSet,HashSet,TreeSet
@@ -142,3 +143,149 @@ public class LinkList {
  
  
 
+=======
+1:
+collection
+set:LinkedSet,LinkedHashSet,HashSet,TreeSet
+
+list:LinkedList,LinkedArrayList
+
+Queue:Deque
+
+two more interfaces in 
+sortedSet and sortedMap used for sorting purpuse.
+
+Collection is a framework is used to store and manipulate data.
+
+        List                          Set 
+List can print duplicate         Set cannot be duplicate value    
+value
+index based                      non indexbased
+positional accessed              not positional accessed
+insertion order                  unordered
+
+LinkedList                       ArrayList
+Manupulation is fast              slow
+Create and read operation slow     fast
+requires more memory               less memory
+
+
+3:
+HashSet                               TreeSet
+
+Hash set is implemented using HashTable 
+The tree set is implemented using a tree structure. 
+ 
+HashSet allows a null object 
+The tree set does not allow the null object. It throws the null pointer exception. 
+ 
+Hash set use equals method to compare two objects 
+Tree set use compare method for comparing two objects. 
+ 
+Hash set doesn't now allow a heterogeneous object 
+Tree set allows a heterogeneous object 
+
+HashSet does not maintain any order 
+TreeSet maintains an object in sorted order 
+
+5:
+The Fail fast iterator aborts the operation as soon it exposes failures and stops 
+the entire operation. Comparatively, Fail Safe iterator doesn't abort the operation in
+ case of a failure
+ 
+ 6:
+ String object: String testString = "String"; 
+ IntStream intStream = testString. chars();
+ 
+ 8:
+  Java 8 has introduced a new Stream API that lets us process data in a declarative manner. 
+Joining Strings With the Stream API. 
+Splitting Strings With Stream API. 
+String Array to Map With Stream API. 
+Testing. 
+
+9:
+the core of the framework that power features such as Inversion of Control 
+and dependency injection.
+
+13:
+String Builder                               buffer
+Theard Safe                              not safe
+syncronized                              not syncronized
+java 1.0                                  java 1.5
+slower                                    faster
+
+16:
+package com.xworkz.test1;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Country {
+	public static void main(String[] args) {
+		Map<String, Integer> map=new TreeMap<String, Integer>();
+		map.put("Ind", 91);
+		map.put("pak", 89);
+		map.put("eng", 67);
+		map.put("sl", 55);
+		map.put("aus", 43);
+		
+		Set<Entry<String, Integer>> entry= map.entrySet();
+		entry.forEach(ele->System.out.println(ele));
+		
+		map.forEach((key,value)->{if(value==55) {System.out.println(key);}});
+			
+		Iterator<Entry<String, Integer>> itr=entry.iterator();
+		while(itr.hasNext()) {
+			Entry<String, Integer> ent= itr.next();
+			if(ent.getValue()==43) {
+				itr.remove();
+				for (Entry<String, Integer> entry2 : entry) {
+					System.out.println(entry2);
+				}
+			}
+		}
+		
+	}
+		
+}
+
+
+20:
+package com.xworkz.test1;
+
+import java.util.LinkedList;
+
+public class LinkList {
+	public static void main(String[] args) {
+
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		list.add(15);
+		list.add(78);
+		list.add(55);
+		list.add(345);
+
+		list.forEach(ele -> System.out.println(ele));
+		list.removeFirst();
+		System.out.println("removed first");
+		list.forEach(ele -> System.out.println(ele));
+		list.removeLast();
+
+		System.out.println("removed last");
+		list.forEach(ele -> System.out.println(ele));
+
+	}
+}
+
+		
+
+
+
+
+ 
+ 
+
+>>>>>>> ba0ab1d69c103ea12bdb72e6e753168e20d4cde9
