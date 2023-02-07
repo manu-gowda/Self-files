@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 @Component
-@RequestMapping("send")
+@RequestMapping("/send")
 
 public class FoodComponent {
 	
@@ -24,7 +24,7 @@ public class FoodComponent {
 		System.out.println(price);
 
 
-		return new String("FoodItem.jsp");
+		return new String("sending.jsp");
 
 	}
 }

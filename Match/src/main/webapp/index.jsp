@@ -20,12 +20,20 @@
 
 				<form class="d-flex">
 					<input class="form-control me-3" type="search" placeholder="Search"
-						aria-label="Search"> <a class="btn btn-outline-primary"
-						href="FoodItem.jsp">FoodItem</a>
+						aria-label="Search"> 
 				</form>
 			</div>
 		</nav>
+		
 	</div>
+>
+
+
+
+	
+
+
+
 
 </body>
 </html>
